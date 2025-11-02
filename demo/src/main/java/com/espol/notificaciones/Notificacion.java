@@ -1,6 +1,7 @@
-package com.espol;
+package com.espol.notificaciones;
 
 import java.util.Date;
+import com.espol.modelo.TipoNotificacion;
 
 public class Notificacion {
     private String id;
@@ -9,5 +10,5 @@ public class Notificacion {
     private String destinatario;
     private Date fechaEnvio;
 
-    public boolean enviar() { return false; }
+    public void enviar() {}
 }

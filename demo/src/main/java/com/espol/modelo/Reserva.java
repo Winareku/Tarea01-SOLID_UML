@@ -1,17 +1,20 @@
 package com.espol.modelo;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import com.espol.interfaces.IPago;
 import com.espol.interfaces.INotificacion;
 import com.espol.usuarios.Huesped;
 import com.espol.usuarios.Anfitrion;
+import com.espol.modelo.EstadoReserva;
 
 public class Reserva {
-    private int id;
-    private String fechaInicio;
-    private String fechaFin;
+    private String id;
+    private Date fechaInicio;
+    private Date fechaFin;
     private String estado;
+    private double total;
 
     private Unidad unidad;
     private Huesped huesped;
@@ -30,4 +33,8 @@ public class Reserva {
 
     public void confirmar() {}
     public void cancelar() {}
+
+    public void crearReserva() {}
+    public void cancelarReserva() {}
+    public double calcularTotal() { return 0.0; }
 }

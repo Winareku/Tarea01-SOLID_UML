@@ -1,4 +1,4 @@
-package com.espol;
+package com.espol.modelo;
 
 import java.util.Date;
 
@@ -9,6 +9,6 @@ public class Incidente {
     private String prioridad;
     private Date fechaReporte;
 
-    public boolean reportarIncidente() { return false; }
-    public boolean escalarIncidente() { return false; }
+    public void reportarIncidente() {}
+    public void escalarIncidente() {}
 }

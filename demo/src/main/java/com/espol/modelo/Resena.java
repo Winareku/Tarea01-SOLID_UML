@@ -1,16 +1,13 @@
 package com.espol.modelo;
 
-import com.espol.usuarios.Huesped;
-import com.espol.usuarios.Anfitrion;
+import java.util.Date;
 
 public class Resena {
-    private int id;
+    private String id;
+    private int puntuacion;
     private String comentario;
-    private int calificacion;
+    private Date fecha;
+    private String tipoCalificador;
 
-    private Reserva reserva;
-    private Huesped autor;
-    private Anfitrion receptor;
-
-    public void registrar() {}
+    public void crearCalificacion() {}
 }
